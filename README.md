@@ -1,3 +1,9 @@
+# docker-scrappy-sftp alpine
+This is a fork of [rhasselbaum/docker-scrappy-sftp](https://github.com/rhasselbaum/docker-scrappy-sftp). I've modified things to work on an alpine docker base image.
+Ideally in the future, my changes can be integrated into the main branch enabling it to provide both ubuntu and alpine based images.
+
+Below is the original readme instructions, which should be the same for the alpine image.
+
 # docker-scrappy-sftp
 Scrappy SFTP is a multi-user SFTP server that emails transfer logs. Each SFTP user has read-write access to their own private directory in a chroot jail. A special `sftpadmin` user has access to all users' directories and can upload files to any of them, which can then be downloaded (or removed) by the individual users.
 
