@@ -21,7 +21,7 @@ fi
 if [ ! -f "/etc/ssh/.containerkeys" ]; then
   echo "Creating new SSH host keys ..."
   rm /etc/ssh/ssh_host_*
-  dpkg-reconfigure openssh-server
+  ssh-keygen -A
   touch /etc/ssh/.containerkeys
 fi
 
